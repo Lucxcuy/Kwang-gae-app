@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%- include('partials/head.html') %>
+	<title>
+		<%= title %>
+	</title>
+</head>
+<body>
+	<header>
+			<%- include('partials/navigation.html') %>
+	</header>
+
+	<section>
+		<div class="container">
+			<h3 class="mt-2 text-center" id="status">Combate terminado</h3>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<p class="text-center" style="font-size: 30px; background-color: red;" id="resultadoRed">0</p></div>
+				<div class="col-6">
+					<p class="text-center" style="font-size: 30px; background-color: blue;" id="resultadoBlue">0</p></div>
+			</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 mb-2">
+					<div class="btn-group-vertical">
+
+						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button" onclick="redScore(1)">Golpe de puño</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="redScore(2)">Patada zona media</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="redScore(3)">Patada zona alta</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="warning(`red`)">Advertencia</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="discount(`red`)">Punto en contra</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="redScore(-1)">Borrar punto</button>
+						<button class="btn btn-dark btn-lg btn-block mt-3 mb-1" id="start-end-button" type="button" onclick="startFight(), start()">Start</button>
+					</div>
+				</div>
+				<div class="col-6 mb-2">
+					<div class="btn-group-vertical">
+
+						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button" onclick="blueScore(1)">Golpe de puño</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="blueScore(2)">Patada zona media</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="blueScore(3)">Patada zona alta</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="warning(`blue`)">Advertencia</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="discount(`blue`)">Punto en contra</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="blueScore(-1)">Borrar punto</button>
+						<button class="btn btn-dark btn-lg btn-block mt-3 mb-1" id="start-end-button" type="button" onclick="endFight(), reset()">End</button>
+					</div>
+				</div>
+			</div>
+			<div class="text-center row mb-5">
+				<div class="col-12">
+				<span id="time" style="font-size: 20px;">00:00:00</span></div>
+			</div>
+		</div>
+
+	</section>
+	<%- include('partials/footer.html') %>
+	<script src="/scripts/arbitraje.js"></script>
+	<script src="/scripts/timer.js"></script>
+	</script>
+</body>
+</html>
