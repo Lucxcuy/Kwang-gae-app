@@ -1,2 +1,3 @@
 .vscode/
 node_modules/
+src/public/scripts/tests.js

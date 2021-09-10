@@ -17,12 +17,19 @@
 		<%- include('partials/navigation.html') %>
 	</header>
 
-	<section style="display: flex; width: 100%; justify-content: space-between; flex-direction: column; align-items: center; ">
-		<button type="button" class="btn btn-lg btn-outline-primary mt-3" type="button" onclick="elegirChallenge()">Dame un desafío</button>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<p  class="text-center fs-5 mt-3 text-white" id="puntos"></p>
+			</div>
+			<div class="row">
+					<button type="button" class="btn btn-lg btn-outline-primary mt-3" type="button" onclick="elegirChallenge()">Dame un desafío</button>
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-8 offset-2">
-					<p  class="text-center fs-3 mt-3" id="result"></p>
+					<p  class="text-center fs-3 mt-2" id="result"></p>
 				</div>
 			</div>
 		</div>
