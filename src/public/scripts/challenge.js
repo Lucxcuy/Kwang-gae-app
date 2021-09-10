@@ -48,6 +48,9 @@ function sumaPuntos(puntos) {
 
 	let puntosTotales = JSON.parse(localStorage.getItem("puntosTotales"));
 	let suma = parseInt(puntosTotales + puntos);
+	if (suma < 0) {
+		suma = 0;
+	}
 	localStorage.setItem("puntosTotales", JSON.stringify(suma));
 
 
