@@ -6,50 +6,92 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<%- include('partials/head.html') %>
-	<title>
-		<%= title %>
-	</title>
+		<title>
+			<%= title %>
+		</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+
 	<header>
 		<%- include('partials/navigation.html') %>
 	</header>
 	<section>
-		<form action="">
-			<h3 class="text-center mt-2 mb-4">Elige el grado</h3>
-			<div class="fs-5 text-center container-fluid">
-				<div class="form-check form-check-inline">
-					<input type="radio" id="1erDan" name="grado" value="1" checked />
-					<label for="1erDan">Hasta 1er Dan</label><br />
-					<input type="radio" id="2doDan" name="grado" value="2" />
-					<label for="2doDan">Hasta 2do Dan</label><br />
-					<input type="radio" id="3erDan" name="grado" value="3" />
-					<label for="3erDan">Hasta 3er Dan</label><br />
-					<input type="radio" id="4toDan" name="grado" value="4" />
-					<label for="4toDan">Hasta 4to Dan</label>
+		<div class="container mt-5">
+
+			<form action="" class="">
+				<div class="row align-items-start">
+					<div class="col text-center text-white">
+						<div class="card bg-dark ">
+							<div class="card-body">
+								<h3 class="text-center">Grado</h3><br />
+								<div class="form-check ">
+									<input class="form-check-input" type="radio" id="1erDan" name="grado" value="1"
+										checked />
+									<label class="form-check-label" for="1erDan">Hasta 1er Dan</label><br />
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" id="2doDan" name="grado" value="2" />
+									<label class="form-check-label" for="2doDan">Hasta 2do Dan</label><br />
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" id="3erDan" name="grado" value="3" />
+									<label class="form-check-label" for="3erDan">Hasta 3er Dan</label><br />
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" id="4toDan" name="grado" value="4" />
+									<label class="form-check-label" for="4toDan">Hasta 4to Dan</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col text-center text-white">
+						<div class="card bg-dark">
+							<div class="card-body">
+								<h3>Cantidad</h3><br />
+								<div class="form-check ">
+									<input class="form-check-input " type="radio" id="1-1formas" name="cantidad"
+										value="1" />
+									<label class="form-check-label" for="1-1formas">Modo torneo</label><br />
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" id="1grado" name="cantidad" value="0"
+										checked />
+									<label class="form-check-label" for="1grado">Forma del grado</label><br />
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" id="1forma" name="cantidad"
+										value="2" />
+									<label class="form-check-label" for="1forma">Una forma</label><br />
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" id="2formas" name="cantidad"
+										value="3" />
+									<label class="form-check-label" for="2formas">Dos formas</label><br />
+								</div>
+							</div>
+						</div>
+						<!--<div class="form-check">
+							<input class="form-check-input" type="radio" id="3formas" name="cantidad" value="4" />
+							<label class="form-check-label" for="3formas">Tres formas</label><br />
+						</div>-->
+					</div>
+					<div class="container-fluid text-center">
+						<button class="btn  btn-dark mt-5" type="button" onclick="elegirFormas()">Elige las
+							formas</button>
+					</div>
+
 				</div>
-				<h3 class="text-center mt-5 mb-4">Elige la cantidad</h3>
-				<div class="form-check form-check-inline">
-					<input type="radio" id="1grado" name="cantidad" value="0" checked />
-					<label for="1grado">Una forma del grado</label><br />
-					<input type="radio" id="1-1formas" name="cantidad" value="1" />
-					<label for="1-1formas">Una forma del grado y otra al azar</label><br />
-					<input type="radio" id="1forma" name="cantidad" value="2" />
-					<label for="1forma">Una forma</label><br />
-					<input type="radio" id="2formas" name="cantidad" value="3" />
-					<label for="2formas">Dos formas</label><br />
-					<input type="radio" id="3formas" name="cantidad" value="4" />
-					<label for="3formas">Tres formas</label><br />
-					<button class="btn btn-lg btn-dark mt-5" type="button" onclick="elegirFormas()">Elige las formas</button>
-				</div>
-			</div>
+		</div>
 		</form>
-		<p class="text-center fs-3 mt-3 mb-5" id="result"></p>
+
+		<p class="text-center fs-3 mt-5 mb-5 text-white" id="result"></p>
+
 	</section>
 
+
 	<%- include('partials/footer.html') %>
-	<script src="/scripts/formas.js"></script>
+		<script src="/scripts/formas.js"></script>
 
 </body>
 
