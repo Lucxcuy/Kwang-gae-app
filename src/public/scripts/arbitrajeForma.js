@@ -233,24 +233,24 @@ function startMatch(level) {
 		<div class="container">
 			<div class="row">
 				<div class="col-6 mb-2">
-					<div class="btn-group-vertical">
+					<div class="btn-group-vertical w-100">
 
-						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button"
+						<button class="btn btn-danger btn-lg mt-3 mb-2" type="button"
 							onclick="redLvl1(0.2)">-0.2</button>
-						<button class="btn btn-danger btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-danger btn-lg mb-2" type="button"
 							onclick="redLvl1(10)">-10</button>
-						<button class="btn btn-danger btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-danger btn-lg mb-2" type="button"
 							onclick="undoLvl1('red')">Undo</button>
 					</div>
 				</div>
 				<div class="col-6 mb-2">
-					<div class="btn-group-vertical">
+					<div class="btn-group-vertical w-100">
 
-						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button"
+						<button class="btn btn-primary btn-lg mt-3 mb-2" type="button"
 							onclick="blueLvl1(0.2)">-0.2</button>
-						<button class="btn btn-primary btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-primary btn-lg mb-2" type="button"
 							onclick="blueLvl1(10)">-10</button>
-						<button class="btn btn-primary btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-primary btn-lg mb-2" type="button"
 							onclick="undoLvl1('blue')">Undo</button>
 					</div>
 				</div>
@@ -272,11 +272,11 @@ function endLvl1() {
 		<div class="container">
 			<div class="row">
 				<div class="col-4 mb-2">
-					<div class="btn-group-vertical">
+					<div class="btn-group-vertical w-100">
 
-						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button"
+						<button class="btn btn-danger btn-lg mt-3 mb-2" type="button"
 							onclick="redLvl2(-0.5)">-0.5</button>
-						<button class="btn btn-danger btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-danger btn-lg mb-2" type="button"
 							onclick="undoLvl2('red')">Undo</button>
 					</div>
 				</div>
@@ -284,11 +284,11 @@ function endLvl1() {
 				<p id="red" class="text-center text-white fs-1 mt-3">x0</p>
 				</div>
 				<div class="col-4 mb-2">
-					<div class="btn-group-vertical">
+					<div class="btn-group-vertical w-100">
 
-						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button"
+						<button class="btn btn-primary btn-lg mt-3 mb-2" type="button"
 							onclick="blueLvl2(-0.5)">-0.5</button>
-						<button class="btn btn-primary btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-primary btn-lg mb-2" type="button"
 							onclick="undoLvl2('blue')">Undo</button>
 					</div>
 				</div>
@@ -311,11 +311,11 @@ function endLvl2() {
 		<div class="container">
 			<div class="row">
 				<div class="col-4 mb-2">
-					<div class="btn-group-vertical">
+					<div class="btn-group-vertical w-100">
 
-						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button"
+						<button class="btn btn-danger btn-lg mt-3 mb-2" type="button"
 							onclick="redLvl3(-0.5)">-0.5</button>
-						<button class="btn btn-danger btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-danger btn-lg mb-2" type="button"
 							onclick="undoLvl3('red')">Undo</button>
 					</div>
 				</div>
@@ -323,11 +323,11 @@ function endLvl2() {
 				<p id="red" class="text-center text-white fs-1 mt-3">x0</p>
 				</div>
 				<div class="col-4 mb-2">
-					<div class="btn-group-vertical">
+					<div class="btn-group-vertical w-100">
 
-						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button"
+						<button class="btn btn-primary btn-lg mt-3 mb-2" type="button"
 							onclick="blueLvl3(-0.5)">-0.5</button>
-						<button class="btn btn-primary btn-lg btn-block mb-2" type="button"
+						<button class="btn btn-primary btn-lg mb-2" type="button"
 							onclick="undoLvl3('blue')">Undo</button>
 					</div>
 				</div>
