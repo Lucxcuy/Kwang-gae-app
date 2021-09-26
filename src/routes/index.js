@@ -15,6 +15,10 @@ router.get("/arbitraje-lucha", (req, res) => {
 	res.render("arbitraje-lucha.html", { title: "Arbitraje de Lucha"} )
 })
 
+router.get("/arbitraje-forma", (req, res) => {
+	res.render("arbitraje-forma.html", { title: "Arbitraje de Forma"} )
+})
+
 router.get("/challenges", (req, res) => {
 	res.render("challenges.html", { title: "Challenges"} )
 })
