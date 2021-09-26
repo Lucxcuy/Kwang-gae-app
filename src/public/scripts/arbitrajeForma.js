@@ -279,7 +279,7 @@ function endLvl1() {
 						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button"
 							onclick="redLvl2(-0.5)">-0.5</button>
 						<button class="btn btn-danger btn-lg btn-block mb-2" type="button"
-							onclick="undoLvl2('red')">Deshacer</button>
+							onclick="undoLvl2('red')">Undo</button>
 					</div>
 				</div>
 				<div class="col-2 mb-2">
@@ -291,7 +291,7 @@ function endLvl1() {
 						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button"
 							onclick="blueLvl2(-0.5)">-0.5</button>
 						<button class="btn btn-primary btn-lg btn-block mb-2" type="button"
-							onclick="undoLvl2('blue')">Deshacer</button>
+							onclick="undoLvl2('blue')">Undo</button>
 					</div>
 				</div>
 				
@@ -318,7 +318,7 @@ function endLvl2() {
 						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button"
 							onclick="redLvl3(-0.5)">-0.5</button>
 						<button class="btn btn-danger btn-lg btn-block mb-2" type="button"
-							onclick="undoLvl3('red')">Deshacer</button>
+							onclick="undoLvl3('red')">Undo</button>
 					</div>
 				</div>
 				<div class="col-2 mb-2">
@@ -330,7 +330,7 @@ function endLvl2() {
 						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button"
 							onclick="blueLvl3(-0.5)">-0.5</button>
 						<button class="btn btn-primary btn-lg btn-block mb-2" type="button"
-							onclick="undoLvl3('blue')">Deshacer</button>
+							onclick="undoLvl3('blue')">Undo</button>
 					</div>
 				</div>
 				<div class="col-2 mb-2">
