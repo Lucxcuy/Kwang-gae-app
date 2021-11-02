@@ -27,4 +27,8 @@ router.get("/selector-formas", (req, res) => {
 	res.render("selector-formas.html", { title: "Selector de Formas"} )
 })
 
+router.get("/cuestionario", (req, res) => {
+	res.render("cuestionario.html", { title: "Cuestionario"} )
+})
+
 module.exports = router;
