@@ -6,36 +6,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
-	<title><%= title %></title>
+	<title>
+		<%= title %>
+	</title>
 	<%- include('partials/head.html') %>
-	
+
 </head>
 
 <body>
 	<%- include('partials/navigation.html') %>
-	
-	<div class="container" id="quiz">
-		<h1>Cuestionario</h1>
 
-		<hr>
+		<div class="container" id="quiz">
+			<h1>Cuestionario</h1>
 
-		<h1 id="question"></h1>
-		<div class="container">
-		<div id="choices" class="row justify-content-center mt-4">
+			<hr>
+
+			<h1 id="question"></h1>
+			<div class="container">
+				<div id="choices" class="row justify-content-center mt-4">
+				</div>
+			</div>
+
+			<hr>
 		</div>
-		</div>
-
-		<hr>
-	</div>
 		<section>
-			<p id="progress"></p>
+			<p id="progress" class="mb-2"></p>
 		</section>
-	
-		<%- include('partials/footer.html') %>
-	
 
-	<!-- SCRIPTS -->
-	<script src="../scripts/cuestionario.js" type="module"></script>
+		<%- include('partials/footer.html') %>
+
+
+			<!-- SCRIPTS -->
+			<script src="../scripts/cuestionario.js" type="module"></script>
 </body>
 
 </html>

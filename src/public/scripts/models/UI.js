@@ -23,7 +23,7 @@ export class UI {
         for (let i = 0; i < choices.length; i++) {
             const button = document.createElement("button");
             button.innerText = choices[i];
-            button.className = "button";
+            button.className = "btn-dark button";
             button.addEventListener("click", () => callback(choices[i]));
             choicesContainer.append(button);
         }

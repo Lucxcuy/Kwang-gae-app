@@ -117,7 +117,7 @@ function getTasks() {
 			let desafio = desafios[i];
 			let punto = puntos[i];
 
-			challengesView.innerHTML += `<div class="card mb-4 text-center">
+			challengesView.innerHTML += `<div class="card mb-4 text-center text-black" style="border-radius: 0.3rem">
 			<div class="card-body">
 				<p>Tienes que hacer ${desafio}.</p>
 				<p><b>RECOMPENSA: ${punto} puntos</b></p>
