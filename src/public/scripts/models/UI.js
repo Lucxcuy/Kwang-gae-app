@@ -36,8 +36,8 @@ export class UI {
 
     showScores(score) {
         const quizEndHTML = `
-            <h1>Result</h1>
-            <h2>Your score: ${score}</h1>
+            <h1>Resultado</h1>
+            <h2 class="result">Tu puntaje: ${score}</h1>
             `;
 
         const element = document.getElementById("quiz");
@@ -51,16 +51,6 @@ export class UI {
      */
      showProgress(currentIndex, total) {
         const element = document.getElementById("progress");
-        element.innerHTML = `Question ${currentIndex} of ${total}`
-    }
-
-    /**
-     *
-     * @param {number} currentIndex the current inde of the quiz
-     * @param {number} total the total questions
-     */
-     showProgress(currentIndex, total) {
-        const element = document.getElementById("progress");
-        element.innerHTML = `Question ${currentIndex} of ${total}`
+        element.innerHTML = `Pregunta ${currentIndex} de ${total}`
     }
 }

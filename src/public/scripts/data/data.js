@@ -5,7 +5,7 @@ export const data = [
 			"Caerse",
 			"Saltar",
 			"Pegar abajo",
-			"Hablar durante la pelea",
+			"Hablar",
 			"Salir del perímetro"
 		],
 		answer: "Saltar"
